@@ -5,15 +5,19 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  align-items: center;
   padding: 38px 48px;
 }
 
-.nav-menu{
-    margin-top: 24px;
+.div-menu{
+    /* margin-top: 24px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.logo {
+.img-logo {
   display: inline-block;
   width: 68px;
   height: 64px;
