@@ -18,8 +18,13 @@
   --font-menu-weight: 500;
 }
 
+/* RESET */
 body,img,h1,p,fieldset,legend,label,input,select,textarea,button {
   margin: 0;
   padding: 0;
   box-sizing: 0;
+}
+
+body{
+  font-family: "Montserrat";
 }
