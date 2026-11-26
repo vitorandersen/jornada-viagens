@@ -1,3 +1,5 @@
+/* MOBILE FIRST */
+
 header {
   /* width: 100%;
   height: 138px; */
@@ -8,6 +10,7 @@ header {
   /* align-items: flex-start; */
   align-items: center;
   padding: 38px 48px;
+  position: relative;
 }
 
 .div-menu{
@@ -24,6 +27,92 @@ header {
   /* margin: 37px 0 0 48px; */
 }
 
-nav{
+.img-logo-mobile {
+  display: block;
+}
+
+.img-logo-desktop {
+  display: none;
+}
+
+
+input[type="checkbox"]:checked ~ nav{
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-tertiary-color)
+}
+
+.div-menu nav{
     display: none;
+}
+
+/* .list-links{
+  list-style: none;  
+} */
+
+.list-links{
+  list-style: none;
+}
+
+.list-links li{
+  margin: 16px 0;
+}
+
+.list-links li a{
+  color: var(--background-secondary-color);
+  text-decoration: none;
+  font-weight: var(--menu-text-weight);
+  font-size: 24px;
+}
+
+
+/* CONFIG TABLET */
+@media screen and (min-width: 768px) {
+  .div-menu{
+    margin-top: 0;
+    width: 467px;
+  }
+
+  .div-menu label{
+    display: none;
+  }
+
+  .div-menu nav{
+    display: block;
+    width: 100%;
+  }
+
+  .div-menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+}
+
+@media screen and (min-width: 1024px){
+  header{
+    padding: 38px 120px;
+  }
+  
+  .img-logo{
+    width: 260px;
+    height: 64px;
+  }
+
+  .img-logo-mobile {
+    display: none;
+  }
+
+  .img-logo-desktop {
+    display: block;
+  }
+
+  .div-menu a:hover{
+    color: var(--hover-color);
+  }
 }
